@@ -39,6 +39,8 @@ app.use(
   cors({
     origin: process.env.FRONTEND_URL || "*", // Allow frontend domain
     credentials: true,
+    allowedHeaders: ["Authorization", "Content-Type"], // Allow Authorization and other headers
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow common HTTP methods
   })
 );
 
