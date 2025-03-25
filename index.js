@@ -10,11 +10,11 @@ const morgan = require("morgan"); // For logging API requests
 dotenv.config();
 
 // Import routes
-const userRoutes = require("./routes/user");
-const profileRoutes = require("./routes/profile");
-const courseRoutes = require("./routes/course"); // Ensure consistent filename case
-const paymentRoutes = require("./routes/payments"); // Ensure consistent filename case
-const contactUsRoute = require("./routes/contact");
+const userRoutes = require("./routes/User");
+const profileRoutes = require("./routes/Profile");
+const courseRoutes = require("./routes/Course"); // Ensure consistent filename case
+const paymentRoutes = require("./routes/Payments"); // Ensure consistent filename case
+const contactUsRoute = require("./routes/Contact");
 
 // Import configurations
 const database = require("./config/database");
